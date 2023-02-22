@@ -1,0 +1,632 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.margin-0{
+    margin: 0px;
+}
+
+h3{
+    margin: 0;
+}
+
+p{
+    margin: 0;
+}
+
+/* CSS TỪ SAU RA TRƯỚC
+    TỪ NGOÀI VÀO TRONG
+    TỪ TRÊN XUỐNG DƯỚI */
+    
+body{background-color: #eee;}
+
+#main-menu{
+    background-color: #2C7ABE;
+    height: 50px;
+}
+
+.container{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+#main-menu a{
+    color: #fff;
+    text-transform: capitalize;
+}
+
+#main-menu .container nav{
+    display: flex;
+    
+   
+}
+
+nav .logo{
+    line-height: 50px;
+    margin: -1px 0;
+    font-size: 17px;
+    text-transform: uppercase;
+}
+
+nav .logo::before{
+    content: "";
+    background-image: url(/project/web-truyện/image/logo-dtruyen.png);
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-size: 40px;
+    vertical-align: middle;
+}
+
+nav .main-nav{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    position: relative;
+}
+
+nav .main-nav li{
+    padding: 0 15px;
+    font-size: 14px;
+    line-height: 50px;
+}
+
+nav .main-nav .upload{
+    background-color: #df1a0c;
+}
+
+#search{
+    margin: 8px 15px;
+    height: 34px;
+    position: relative;
+    
+}
+
+nav #search input{
+    width: 270px;
+    height: 34px;
+    padding: 0 15px;
+    border-radius: 1px;
+    border: none;
+}
+
+nav #search button{
+    height: 34px;
+    padding: 15px 20px;
+    border: none;
+    position: absolute;
+    top: 0px;
+    margin-left: 3px;
+}
+
+.fa-magnifying-glass::before {
+    top: 10px;
+    content: "\f002";
+    left: 10px;
+    position: absolute;
+    font-size: 14px;
+}
+
+#main-menu .user{
+    margin-left: 70px;
+    line-height: 50px;
+    font-size: 14px;
+    height: 50px;
+}
+
+#main-menu .user:hover{
+    background-color: rgba(255,255,255,0.1);
+}
+/* ========SUB-MENU======== */
+
+.sub-menu{
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    list-style: none;
+    width: 300px;
+    flex-wrap: wrap;
+    z-index: 99;
+}
+
+.sub-menu li{
+    width: 50%;
+    border-top: solid #ddd 1px;
+}
+
+.sub-menu li a{
+    color: #333 !important;
+}
+
+.sub-menu-arrange .list-center{
+    width: 100% !important;
+    text-align: center;
+}
+
+.type:hover .sub-menu-type{
+    display: flex;
+    left: 0;
+}
+
+.arrange:hover .sub-menu-arrange{
+    display: flex;
+    left: 100px;
+}
+
+/* ============MAIN========== */
+
+#main{
+    
+}
+
+.wp-main{
+    display: flex;
+    justify-content: space-between;
+    
+}
+/* ===========CONTENT========== */
+#content{
+    width: 680px; 
+    
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.wp-card-box{
+    /* border-top: 20px solid #eee; */
+    margin-top: 20px;
+    background-color: #fff;
+
+}
+.wp-card-box .title{
+    padding: 5px;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-bottom: 1px solid #33333333;
+    color: #016eb2;
+}
+
+.wp-card-box nav{
+    padding: 5px;
+    border-bottom: 1px dashed #33333333;
+    display: flex;
+}
+
+.wp-card-box .suggest{
+    background-color: #555555;
+    padding: 5px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    color: #ffffff;
+    border-radius: 2px;
+}
+
+.card-box{
+    margin-top: 10px ;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.slide-card{
+    position: relative;
+    margin-left: 15px;
+}
+.slide-card .info{
+    background-color: rgba(0,0,0,0.8);
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    text-align: center;
+    width: 100%;
+    height: 30%;
+    color: #fff;
+    padding: 15px 10px 0 10px;
+}
+
+.slide-card .info h3{
+    line-height: 15px;
+}
+
+.slide-card .info a{
+    color: #fff;
+    font-size: 14px;
+    text-transform: capitalize;
+    
+}
+
+.slide-card .info p{
+    font-size: 12px;
+    text-transform: capitalize;
+    color: rgba(255,255,255,0.8);
+    position: absolute;
+    left: 96px;
+    bottom: 10px;
+
+}
+
+.card{
+    padding: 8px;
+}
+
+.card a img{
+    height: 195px;
+    width: 152px;
+}
+
+.card .info{
+    text-align: center;
+    width: 100%;
+    padding: 8px;
+    display: block;
+    margin: 0;
+}
+.card .info p{
+    font-size: 12px;
+    text-transform: capitalize;
+    color: rgba(255,255,255,0.8);
+}
+
+.card .info h3{
+    line-height: 15px;
+    font-size: 14px;
+}
+
+.card .info a{
+    color: #333;
+    font-size: 14px;
+    text-transform: capitalize;
+    
+}
+
+.card .info p{
+    font-size: 12px;
+    text-transform: capitalize;
+    color: #333;
+
+}
+
+.more{
+    margin: 0 auto !important;
+    padding: 15px;
+    width: fit-content;
+    height: fit-content;
+    
+}
+
+.more a{
+    padding: 5px 10px;
+    background-color: #737373;
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: 10px;
+    
+}
+
+/* ==========TRUYỆN ĐỀ CỬ=========== */
+.wp-line{
+
+}
+
+.wp-line ul li{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px dashed #33333333 ;
+    padding: 10px;
+
+}
+
+.wp-line ul li .name::before{
+    content: "Dịch";
+    color: #e74c3c;
+    border: solid 1px #e74c3c;
+    position: absolute;
+    right: 0;
+    padding: 2px;
+
+}
+.name{
+    flex-grow: 3;
+    position: relative;
+   
+}
+
+.name a h3{
+    color: #444;
+    text-transform: capitalize;
+}
+
+.time{
+    flex-grow: 1;
+    text-align: right;
+
+}
+
+.chap{
+    flex-grow: 1;
+    text-align: right;
+    
+}
+
+/* ============TRUYỆN NGẮN==================== */
+.wp-thump{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 10px;
+}
+
+.wp-thump .big-thump{
+    flex-grow: 1;
+}
+
+.big-thump a {
+    position: relative;
+}
+
+.big-thump a img{
+    width: 100%;
+    height: 100%;
+    
+}
+
+.big-thump a p{
+    position: absolute;
+    top: 95px;
+    left: 10px;
+    color: #fff;
+    font-weight: 600;
+}
+
+
+.wp-thump ul{
+list-style: none;
+flex-grow: 1;
+margin-left: 10px;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+margin-bottom: 0;
+}
+
+.wp-thump ul li a{
+    display: flex;
+}
+
+.wp-thump ul li a img{
+    margin-right: 10px;
+}
+
+.wp-thump ul li a p{
+    color: #333;
+}
+
+
+
+/* =======SIDE BAR=========== */
+#sidebar{
+    width: 300px;
+    background-color: #eee;
+    
+}
+
+#sidebar .wp-card-box ul{
+    display: flex;
+    flex-wrap: wrap ;
+    justify-content: space-between;
+}
+
+#sidebar .wp-card-box ul li{
+    list-style: none;
+    width: 50%;
+    padding: 6px 6px 6px 20px;
+}
+
+#sidebar .wp-card-box ul li a{
+    color: #444444;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: capitalize;
+}
+
+#sidebar .wp-card-box ul .highlight a{
+    color: #df1a0c;
+}
+
+.list-review{
+     flex-direction: column;
+}
+
+.list-review ul{
+    margin: 0;
+}
+
+.list-review li{
+    width: 100% !important;
+    
+}
+
+.list-review li a{
+   color: #737373;
+   display: flex;
+   
+}
+
+.list-review li a img{
+    margin-right: 5px;
+    max-width: 50px;
+    max-height: 50px;
+}
+
+.list-review li a p{
+    font-weight: 400;
+    color: #444444;
+}
+
+/* =========TRUYỆN ĐỀ CỬ====== */
+
+.wp-line ul .line{
+    width: 100% !important;
+    display: block;
+    position: relative;
+    height: 48px;
+    width: 100%;
+    
+}
+
+.wp-line ul .line h3{
+    margin-left: 10px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+
+.wp-line ul .line:nth-of-type(1)::before{
+    content: "01";
+    position: absolute;
+    left: 0px;
+    font-size: 25px;
+    text-align: center;
+    font-weight: 200;
+    top: 0px;
+}
+.wp-line ul .line:nth-of-type(2)::before{
+    content: "02";
+    position: absolute;
+    left: 0px;
+    font-size: 25px;
+    text-align: center;
+    font-weight: 200;
+    top: 0px;
+}
+
+.wp-line ul .line:nth-of-type(3)::before{
+    content: "03";
+    position: absolute;
+    left: 0px;
+    font-size: 25px;
+    text-align: center;
+    font-weight: 200;
+    top: 0px;
+}
+
+.wp-line ul .line:nth-of-type(4)::before{
+    content: "04";
+    position: absolute;
+    left: 0px;
+    font-size: 25px;
+    text-align: center;
+    font-weight: 200;
+    top: 0px;
+}
+
+.wp-line ul .line:nth-of-type(5)::before{
+    content: "05";
+    position: absolute;
+    left: 0px;
+    font-size: 25px;
+    text-align: center;
+    font-weight: 200;
+    top: 0px;
+}
+
+.wp-line ul .line:nth-of-type(6)::before{
+    content: "06";
+    position: absolute;
+    left: 0px;
+    font-size: 25px;
+    text-align: center;
+    font-weight: 200;
+    top: 0px;
+}
+
+.wp-line ul .line:nth-of-type(7)::before{
+    content: "07";
+    position: absolute;
+    left: 0px;
+    font-size: 25px;
+    text-align: center;
+    font-weight: 200;
+    top: 0px;
+}
+
+.wp-line ul .line:nth-of-type(8)::before{
+    content: "08";
+    position: absolute;
+    left: 0px;
+    font-size: 25px;
+    text-align: center;
+    font-weight: 200;
+    top: 0px;
+}
+.wp-line ul .line:nth-of-type(9)::before{
+    content: "09";
+    position: absolute;
+    left: 0px;
+    font-size: 25px;
+    text-align: center;
+    font-weight: 200;
+    top: 0px;
+}
+.wp-line ul .line:nth-of-type(10)::before{
+    content: "10";
+    position: absolute;
+    left: 0px;
+    font-size: 25px;
+    text-align: center;
+    font-weight: 200;
+    top: 0px;
+}
+
+.wp-line ul .line::after{
+   
+    font-family: "Font Awesome 5 Brands"; content: "\f06e";
+}
+
+/* =========FOOTER========= */
+footer{
+    background-color: #333;
+    margin-top: 20px;
+    
+}
+
+footer .wp-footer{
+    
+}
+
+footer .wp-footer nav h3{
+    font-size: 1.3em;
+    color: #fff;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+   
+}
+
+.wp-footer nav{
+    background-color: #000000;
+    padding: 10px 20px;
+}
+
+.wp-footer nav a{
+    color: #aaa;
+    margin-right: 10px;
+}
+
+footer .wp-intro{
+    display: flex;
+    justify-content: space-between;
+}
+
+.wp-intro .intro{
+    color: #fff;
+    margin-top: 20px;
+    width: 75%;
+}
+
+.wp-intro .copy-right{
+    width: 25%;
+    text-align: center;
+    color: #fff;
+}
